@@ -28,6 +28,9 @@ export async function getServerSideProps() {
 export default function Home({
   isConnected,
 }: InferGetServerSidePropsType<typeof getServerSideProps>) {
+
+  console.log(process.env.NODE);
+
   return (
     <div className="container">
       <Head>
